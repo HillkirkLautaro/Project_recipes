@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recetas Caseras</title>
-  <style>
+<style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -21,27 +21,51 @@
     h1 {
       margin: 0;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      gap: 1rem;
     }
-    li {
-      margin: 0.5rem 0;
-    }
-    a {
+
+    .receta {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
       text-decoration: none;
-      color: #ff7043;
+      color: #333;
+      transition: transform 0.2s ease;
     }
-  </style>
+
+    .receta:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .receta h2 {
+      margin: 0;
+    }
+</style>
 </head>
 <body>
   <header>
     <h1>Recetas Caseras</h1>
     <p>¡Descubrí platos fáciles y deliciosos!</p>
   </header>
-<ul>
-  <li><a href="/recipes/ensalada-de-pollo.html">Ensalada de pollo</a></li>
-  <li><a href="/recipes/milanesa-a-caballo.html">Milanesa a caballo</a></li>
-</ul>
+
+  <main>
+    <a class="receta" href="/recipes/ensalada-de-pollo.index">
+      <h2>Ensalada de Pollo</h2>
+    </a>
+    <a class="receta" href="/recipes/milanesa-a-caballo.index">
+      <h2>Milanesa a Caballo</h2>
+    </a>
+  </main>
 </body>
 </html>

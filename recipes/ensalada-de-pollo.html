@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ensalada de pollo</title>
-</head>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ensalada de Pollo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+  <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #fff8f0;
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
     }
 
     header {
-        background-color: #ff7043;
-        color: white;
-        padding: 1rem;
-        text-align: center;
+      background-color: #ff7043;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     h1 {
-        margin: 0;
+      margin: 0;
+      font-size: 2.5rem;
     }
-</style>
+
+    p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .ingredientes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .ingrediente {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @media (max-width: 500px) {
+      .ingredientes {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
 <body>
-    <header>
-        <h1>Ensalada de pollo</h1>
-        <p>Ensalada de pollo casera</p>
-    </header>
-    <ul>
-        <li>Pollo</li>
-        <li>Lechuga</li>
-        <li>Tomate</li>
-        <li>Cebolla</li>
-        <li>Queso</li>
-        <li>Mayonesa</li>
-    </ul>
+  <header>
+    <h1>Ensalada de pollo</h1>
+    <p>Receta casera fácil y deliciosa</p>
+  </header>
+
+  <main>
+    <h2>Ingredientes</h2>
+    <div class="ingredientes">
+      <div class="ingrediente">Pollo</div>
+      <div class="ingrediente">Lechuga</div>
+      <div class="ingrediente">Tomate</div>
+      <div class="ingrediente">Cebolla</div>
+      <div class="ingrediente">Queso</div>
+      <div class="ingrediente">Mayonesa</div>
+    </div>
+  </main>
 </body>
+</html>
