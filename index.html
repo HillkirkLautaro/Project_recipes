@@ -53,10 +53,32 @@
       margin: 0;
     }
 
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: hover 0.2s ease;
+    }
+
+    nav a:hover {
+      background-color: #ff4800;
+    }
 </style>
 </head>
 <body style="font-size: 1em; font-family: Quicksand;">
   <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ensalada-de-pollo.html">Ensalada de Pollo</a>
+      <a href="milanesa-a-caballo.html">Milanesa a Caballo</a>
+    </nav>
     <h1>Recetas Caseras</h1>
     <p>¡Descubrí platos fáciles y deliciosos!</p>
   </header>
